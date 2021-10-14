@@ -10,17 +10,23 @@ namespace Task1
     {
         static void Main(string[] args)
         {
-            var array1 = new int[10];
+            int lenght = 7;
+            var array1 = new int[lenght];
             array1 = FillArray(array1);
-            var array2 = new int[10];
+            var array2 = new int[lenght];
             array2 = FillArray(array2);
 
             FindAveragePositive(array1);
             OutputArray(array1);
 
+            Console.WriteLine();
+
             FindAveragePositive(array2);
             OutputArray(array2);
             Console.ReadLine();
+
+
+
         }
 
         private static void FindAveragePositive(int[] array)
@@ -43,8 +49,8 @@ namespace Task1
             var rnd = new Random();
             for (int i = 0; i < array.Length; i++)
             {
-                //array[i] = int.Parse(Console.ReadLine());
-                array[i] = rnd.Next(10, 50);
+                array[i] = int.Parse(Console.ReadLine());
+                //array[i] = rnd.Next(10, 50);
             }
             return array;
         }
