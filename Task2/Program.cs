@@ -80,7 +80,7 @@ namespace Task2
                 Console.Write(item + "\t");
             }
             Console.WriteLine();
-            Console.WriteLine();
+            Console.WriteLine("-----------------------------------------------------------------------------");
         }
     }
 }

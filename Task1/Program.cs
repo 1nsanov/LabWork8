@@ -61,6 +61,7 @@ namespace Task1
                 Console.Write(item + "\t");
             }
             Console.WriteLine();
+            Console.WriteLine("-----------------------------------------------------------------------------");
         }
     }
 }
